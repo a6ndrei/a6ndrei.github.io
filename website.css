@@ -1,27 +1,14 @@
 .obtine-cariera{
-  /*text-align: center;
-  font-family: GeistSans;
-  font-weight: bold;
-  font-size:36px;
-  color:black;
-  margin-top: 100px;
-  width: 100%;
-  height: 200px;*/
+  
   text-align: center;
   font-family: Geist;
   font-weight: bold;
   margin-top: 40px;
- /* position: absolute; 
-    top: 40%; 
-    left: 40%; */
-
-    font-size: 30px; 
-   /* font-family: Arial, Helvetica, sans-serif; */
-    background: linear-gradient(to right, #f32170, 
-            #ff6b08, #cf23cf, #eedd44); 
-    -webkit-text-fill-color: transparent; 
-    -webkit-background-clip: text; 
- 
+  font-size: 30px; 
+  background: linear-gradient(to right, #f32170, 
+          #ff6b08, #cf23cf, #eedd44); 
+  -webkit-text-fill-color: transparent; 
+  -webkit-background-clip: text; 
 }
 .right-section{
   margin-left: 1250px;
@@ -131,7 +118,7 @@
   font-size: 16px;
 }
 .centru{
-  height:500px;
+  height:800px;
   background-color: #f0f0f1;
   opacity: 1;
   width: 100%;
@@ -280,4 +267,244 @@
   display: inline-block;
   margin-top: 10px;
   margin-left: 32px;
+}
+.card3{
+  background-color: white;
+  margin-left: 210px;
+  margin-top: 40px;
+  height: 250px;
+  width: 480px;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+.card3:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.dezvoltare-software{
+  padding-top: 75px;
+  padding-left: 33px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.modele-de-proiectare{
+  padding-left: 33px;
+  color: #616181;
+  font-size: 17px;
+}
+.flex-dreptunghiuri-3{
+  display: flex;
+  flex-direction: row;
+}
+.card-git{
+  padding: 5px;
+  background-color: #d1d1d8;
+  border-radius: 7px;
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 32px;
+}
+.modele-design{
+  padding: 5px;
+  background-color: #d1d1d8;
+  border-radius: 7px;
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 32px;
+}
+.agile{
+  padding: 5px;
+  background-color: #d1d1d8;
+  border-radius: 7px;
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 32px;
+}
+.card4{
+  background-color: white;
+  margin-left: 100px;
+  margin-top: 40px;
+  height: 250px;
+  width: 480px;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+.card4:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.flex-carduri-2{
+  display: flex;
+  flex-direction: row;
+}
+.pregatire-examen{
+  padding-top: 75px;
+  padding-left: 33px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.interviuri-de-cod{
+  padding-left: 33px;
+  color: #616181;
+  font-size: 17px;
+}
+.flex-dreptunghiuri-4{
+  display: flex;
+  flex-direction: row;
+}
+.card-interviuri-cod{
+  padding: 5px;
+  background-color: #d1d1d8;
+  border-radius: 7px;
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 31px;
+}
+.card-cursuri-universitare{
+  padding: 5px;
+  background-color: #d1d1d8;
+  border-radius: 7px;
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 32px;
+}
+.optiuni-pret{
+  text-align: center;
+  font-family: Geist;
+  font-weight: bold;
+  margin-top: 110px;
+  font-size: 30px; 
+  background: linear-gradient(to right, #f32170, 
+          #ff6b08, #cf23cf, #eedd44); 
+  -webkit-text-fill-color: transparent; 
+  -webkit-background-clip: text; 
+}
+.alege-planul{
+  font-family: Geist;
+  margin-top:40px;
+  text-align: center;
+  background: #2a979b;
+  background: linear-gradient(90deg, rgba(42, 151, 155, 1) 9%, rgba(61, 155, 116, 1) 20%, rgba(87, 167, 199, 1) 61%, rgba(132, 83, 237, 1) 86%);
+  -webkit-text-fill-color: transparent; 
+  -webkit-background-clip: text; 
+  font-size: 17px;
+}
+.flex-carduri-3{
+  display: flex;
+  flex-direction: row;
+}
+.card5{
+  margin-left: 100px;
+  margin-top: 40px;
+  height: 550px;
+  width: 300px;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%); 
+  backdrop-filter: blur(10px);
+}
+.sesiune-unica{
+  padding-top: 25px;
+  padding-left: 25px;
+  font-size: 35px;
+  color: white;
+}
+.intrebari-specifice{
+  color: white;
+  padding-left: 25px;
+  font-size: 18px;
+}
+.ajutor-unic{
+  color: white;
+  padding-left: 25px;
+  font-size: 18px;
+}
+.euro1{
+  color: white;
+  padding-left: 25px;
+  font-size: 35px;
+  padding-top: 20px;
+  display: inline-block;
+}
+.ora1{
+  color: white;
+  font-size: 18px;
+  display: inline-block;
+}
+.sesiune-card1{
+  color: white;
+  font-size: 18px;
+  padding-left: 45px;
+}
+.partajare-card1{
+  color: white;
+  font-size: 18px;
+  padding-left: 45px;
+}
+.inregistrare-card1{
+  color: white;
+  font-size: 18px;
+  padding-left: 45px;
+}
+.buton-card5{
+  margin-top: 70px;
+  margin-left: 73px;
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  font-size: 17px;
+  position: relative;
+}
+.buton-card5:hover::after, .buton-card5:hover::before{
+    transform: scale(1, 1);
+}
+.buton-card5::after, .buton-card5::before{
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+    transition: all 0.5s;
+}
+.buton-card5::after{
+    border-right: 1px solid yellow;
+    border-left: 1px solid yellow;
+    transform: scale(1, 0);
+}
+.buton-card5::before{
+  border-top: 1px solid yellow;
+  border-bottom: 1px solid yellow;
+  transform: scale(0, 1);
+}
+.card6{
+  margin-left: 150px;
+  margin-top: 40px;
+  height: 550px;
+  width: 300px;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  background: linear-gradient(90deg, #0700b8 0%, #00ff88 100%);
+  backdrop-filter: blur(10px);
+}
+.oferta-card6{
+  padding-top: 25px;
+  padding-left: 25px;
+  font-size: 35px;
+  color: white;
+}
+.varianta-card6{
+  color: white;
+  padding-left: 25px;
+  font-size: 18px;
+}
+.invatare-continua{
+  color: white;
+  padding-left: 25px;
+  font-size: 18px;
 }
