@@ -8,12 +8,15 @@
 </head>
 <body>
   <div class="header">
-    <div class="right-section">
-    <button class="preturi">Preturi</button>
-    <button class="reviews">Reviews</button>
-    <button class="cumpara">Cumpara</button>
+    <div style="flex:1"></div>
+    <div>
+    <button class="preturi" onclick="window.location.href='#preturi'">Preturi</button>
+    <button class="reviews" onclick="window.location.href='#reviews'">Reviews</button>
+    <button class="cumpara" onclick="window.location.href='#preturi'">Cumpara</button>
   </div>   
   </div>
+ 
+
   
 <!--<p>Obtine cariera dorita in programare cu aceste cursuri</p>-->
 <div class="obtine-cariera">Obtine cariera dorita in programare cu aceste cursuri
@@ -22,8 +25,8 @@
   Obține ajutor de specialitate în programare, algoritmi, structuri de date și multe altele.
 </div>
 <div class="butoane-invatare-pret">
-  <button class="buton-invatare">Incepe sa inveti astazi</button>
-  <button class="buton-pret-centru">Vezi preturile</button>
+  <button class="buton-invatare" onclick="window.location.href='#preturi'">Incepe sa inveti astazi</button>
+  <button class="buton-pret-centru" onclick="window.location.href='#preturi'">Vezi preturile</button>
 </div>
 <div class="text-rating">
   <span class="studenti">500+</span>
@@ -93,7 +96,7 @@
     
    
 </div>
-  <div class="optiuni-pret">
+  <div class="optiuni-pret" id="preturi">
     Optiuni flexibile de pret
   </div>
   <div class="alege-planul">
@@ -119,7 +122,7 @@
       <p class="inregistrare-card1">
         Înregistrarea sesiunii
       </p>
-      <button class="buton-card5">
+      <button class="buton-card5" onclick="window.location.href='#rezerva'">
         rezervă acum
       </button>
     </div>
@@ -149,7 +152,7 @@
       <p class="materiale-card2">
         Materiale de studiu personalizate
       </p>
-      <button class="buton-card6">
+      <button class="buton-card6" onclick="window.location.href='#rezerva'">
         începe
       </button>
     </div>
@@ -179,7 +182,7 @@
       <p class="tutoring-card2">
         Asistență prin chat 24/7
       </p>
-      <button class="buton-card6">
+      <button class="buton-card6" onclick="window.location.href='#rezerva'">
         începe
       </button>
     </div>
@@ -202,7 +205,7 @@
   <p class="indiferent">
     Indiferent dacă te confrunți cu prima ta temă de programare sau te pregătești pentru interviuri tehnice, sunt aici să te ajut să reușești.
   </p>
-  <div class="ce-spun-studentii">
+  <div class="ce-spun-studentii" id="reviews">
     Ce spun studenții
   </div>
   <div class="credeti-pe-cuvant">
@@ -243,7 +246,7 @@
       </div>
     </div>
   </div>
-  <div class="final">
+  <div class="final" id="rezerva">
     <div class="gata-sa-inveti">
     Ești gata să începi să înveți?
     </div>
