@@ -287,7 +287,7 @@
         <div class="disponibil-card9">
           Timp de răspuns: de obicei, în termen de 2 ore în timpul programului de lucru
         </div>
-        <button class="buton-card10">
+        <button class="buton-card10" id="butonContact">
           Trimite mesaj
         </button>
       </div>
@@ -297,11 +297,26 @@
 
   <div class="modal-content">
     <span class="close">&times;</span>
-
+    <h1 class="email">Email</h1>
+    <input type="text" placeholder="Email"><br>
+    <h2 class="numar-de-telefon">Numar de telefon</h2>
+    <input type="text" placeholder="Numar de telefon"><br>
+    <h3 class="data">Selecteaza data</h3>
+    <input type="date">
+    <h4 class="selecteaza-ora">Selecteaza ora</h4>
+    <input type="time" min="9:00" max="21:00">
+    <button class="programeaza" id="programat">Programeaza-te</button> 
+  </div>
+</div>
+<div id="modalProgramat" class="modalProgramat">
+  <div class="modal-continut">
+    <span class="inchide">&times;</span>
+    <p>Felicitari! Te-ai programat!</p>
   </div>
 
 </div>
   <script src="website.js">
   </script>
+  
 </body>
 </html>

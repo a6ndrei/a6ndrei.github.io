@@ -846,9 +846,10 @@ card8:hover{
 }
 
 .modal-content {
-  background-color: #fefefe;
-  margin: 15% auto;
-  padding: 100px;
+ /* background-color: #efb6b6;*/
+ background-color: #ebebfa;
+  margin: 1% auto;
+  padding: 0 20px 240px 50px;
   border: 1px solid #888;
   width: 50%; 
 }
@@ -862,6 +863,100 @@ card8:hover{
 
 .close:hover,
 .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.email{
+  font-size: 21px;
+  text-align: center;
+}
+.numar-de-telefon{
+  font-size: 21px;
+  text-align: center;
+}
+input{
+  margin: 10px auto;
+  display: block;
+  border: 2px solid #0d6f8a;
+  border-radius: 5px;
+  padding: 13px 15px;
+}
+.data{
+  font-size: 21px;
+  text-align: center;
+}
+.selecteaza-ora{
+  font-size: 21px;
+  text-align: center;
+}
+.programeaza{
+  margin-top: 55px;
+  text-align: center;
+  width: 250px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  font-size: 17px;
+  position: relative;
+  left: 34%;
+}
+.programeaza:hover::after, .programeaza:hover::before{
+  transform: scale(1, 1);
+}
+.programeaza::after, .programeaza::before{
+  content: '';
+  position: absolute;
+  top: 6px;
+  right: 12px;
+  bottom: 6px;
+  left: 12px;
+  transition: all 0.5s;
+}
+.programeaza::after{
+  border-right: 1px solid rgb(0, 208, 255);
+  border-left: 1px solid rgb(0, 208, 255);
+  transform: scale(1, 0);
+}
+.programeaza::before{
+  border-top: 1px solid rgb(0, 208, 255);
+  border-bottom: 1px solid rgb(0, 208, 255);
+  transform: scale(0, 1);
+}
+.modalProgramat {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-continut {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.inchide {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.inchide:hover,
+.inchide:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;
