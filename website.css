@@ -1065,4 +1065,20 @@ textarea{
   height: 30px;
   padding-top: 13px;
 }
-
+.imagine-eu{
+  display: inline;
+  margin: 0 auto;
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 200px;
+  margin-left: 140px;
+}
+/* .image-cropper {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+} */
