@@ -851,7 +851,7 @@ card8:hover{
  /* background-color: #efb6b6;*/
   background-color: #ebebfa;
   margin: 1% auto;
-  padding: 0 20px 240px 50px;
+  padding: 50px 20px 240px 50px;
   border: 1px solid #888;
   width: 50%; 
 }
@@ -983,7 +983,7 @@ input[type=text]:focus {
 .modal-content-contact {
   background-color: #ebebfa;
   margin: 1% auto;
-  padding: 0 20px 240px 50px;
+  padding: 50px 20px 240px 50px;
   border: 1px solid #888;
   width: 50%; 
 }
