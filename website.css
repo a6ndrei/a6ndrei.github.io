@@ -1,3 +1,8 @@
+body{
+  margin:0;
+  padding: 0;
+}
+
 .obtine-cariera{
   
   text-align: center;
@@ -117,54 +122,56 @@
 .buton-pret-centru:hover{
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
+.text-rating{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 20px 0;
+}
 .studenti{
   font-size: 27px;
   font-weight: bold;
-  margin-left: 320px;
   margin-top: 40px;
 }
 .studenti-ajutati{
-  margin-left: 300px;
   font-size: 16px;
   color: #71717A;
 }
 .rating-cifre{
   font-size: 27px;
   font-weight: bold;
-  margin-left: 300px;
+  /* display: inline-block; */
   margin-top: 40px;
-  display: inline-block;
 }
 .succes{
-  margin-left: 300px;
+  margin-top: 40px;
   font-size: 27px;
   font-weight: bold;
 }
 .rating-mediu{
-  margin-left: 265px;
   color: #71717A;
   font-size: 16px;
 }
 .rata-de-succes{
-  margin-left: 260px;
   color: #71717A;
   font-size: 16px;
 }
 .centru{
-  height:800px;
+  padding: 40px;
   background-color: #f0f0f1;
   opacity: 1;
-  width: 100%;
 }
 .ce-invat{
-  padding-top: 30px;
+  padding-top: 10px;
   font-size: 28px;
   text-align: center;
   font-family: Geist;
   font-weight: bold;
 }
 .meditatii{
-  margin-left: 500px;
+  text-align: center;
+  /* margin-left: 500px; */
   font-size: 19px;
   background: linear-gradient(to right, #f32170, 
             #ff6b08, #cf23cf, #eedd44); 
@@ -172,7 +179,8 @@
     -webkit-background-clip: text; 
 }
 .limbaje{
-  margin-left: 660px;
+  text-align: center;
+  /* margin-left: 660px; */
   font-size: 19px;
    background: linear-gradient(to right, #f32170, 
             #ff6b08, #cf23cf, #eedd44); 
@@ -181,7 +189,7 @@
 }
 .card1{
   background-color: white;
-  margin-left: 210px;
+  /* margin-left: 210px; */
   margin-top: 40px;
   height: 250px;
   width: 480px;
@@ -218,6 +226,8 @@
 .flex-carduri-1{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 .card-java{
   padding: 5px;
@@ -253,7 +263,6 @@
 }
 .card2{
   background-color: white;
-  margin-left: 100px;
   margin-top: 40px;
   height: 250px;
   width: 480px;
@@ -301,7 +310,7 @@
 }
 .card3{
   background-color: white;
-  margin-left: 210px;
+  /* margin-left: 210px; */
   margin-top: 40px;
   height: 250px;
   width: 480px;
@@ -353,7 +362,7 @@
 }
 .card4{
   background-color: white;
-  margin-left: 100px;
+  /* margin-left: 100px; */
   margin-top: 40px;
   height: 250px;
   width: 480px;
@@ -367,6 +376,8 @@
 .flex-carduri-2{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 .pregatire-examen{
   padding-top: 5px;
@@ -423,9 +434,11 @@
 .flex-carduri-3{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 .card5{
-  margin-left: 100px;
+  /* margin-left: 100px; */
   margin-top: 40px;
   height: 550px;
   width: 300px;
@@ -513,7 +526,7 @@
   transform: scale(0, 1);
 }
 .card6{
-  margin-left: 150px;
+  /* margin-left: 150px; */
   margin-top: 40px;
   height: 550px;
   width: 300px;
@@ -594,7 +607,7 @@
   transform: scale(0, 1);
 }
 .card7{
-  margin-left: 150px;
+  /* margin-left: 150px; */
   margin-top: 40px;
   height: 550px;
   width: 300px;
