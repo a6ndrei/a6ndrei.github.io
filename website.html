@@ -420,20 +420,18 @@
   <div id="modalulmeu" class="modal">
 
     <div class="modal-content">
-      <span class="close">&times;</span>
+      <span id="spanProgramat"class="close">&times;</span>
       <h1 class="email">Email</h1>
       <input type="text" class="mail" id="mailProgramare" placeholder="Email"><br>
       <h2 class="numar-de-telefon">Număr de telefon</h2>
-      <input type="text" placeholder="Numar de telefon"><br>
+      <input type="text" id="telefon" placeholder="Numar de telefon"><br>
       <h3 class="data">Selectează data</h3>
       <div class="validator">
         <input type="date" class="input-data" id="myDate" min="2025-01-05" max="2026-01-01" required/>
       <span class="validare"></span>
       </div>
-      <!-- <input type="date" min="2025-01-05" max="2026-01-01" required/>
-      <span class="validare"></span> -->
       <h4 class="selecteaza-ora">Selectează ora</h4>
-      <input type="time" min="9:00" max="21:00">
+      <input type="time" id="ora" min="9:00" max="21:00">
       <button class="programeaza" id="programat">Programează-te</button>
     </div>
   </div>
@@ -452,14 +450,14 @@
 
     <!-- Modal content -->
     <div class="modal-content-contact">
-      <span class="closeContact">&times;</span>
+      <span id="spanContact"class="closeContact">&times;</span>
       <h1 class="email">Email</h1>
-      <input type="text" id="mail" placeholder="Email"><br>
+      <input type="text" id="mailContact" placeholder="Email"><br>
       <h3 class="mesaj-contact">
         Scrie mesaj
       </h3>
       <!-- <input type="text" placeholder="Scrie mesaj" class="input-contact" name="contact">-->
-      <textarea name="contact" cols="40" rows="5"></textarea>
+      <textarea name="contact" id="mesajTrimis" cols="40" rows="5"></textarea>
       <button class="programeaza" id="trimite">Trimite</button>
     </div>
 

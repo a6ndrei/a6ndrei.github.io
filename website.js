@@ -30,23 +30,46 @@ var modalProgramat = document.getElementById("modalProgramat");
 var button = document.getElementById("programat");
 
 // Get the <span> element that closes the modal
-var spanProgramat = document.getElementsByClassName("inchide")[0];
+var spanProgramat = document.getElementById("spanProgramat");
+
 // When the user clicks on the button, open the modal
 button.onclick = function() {
-  ValidateEmail();
-  modal.style.display= "none";
-  modalProgramat.style.display = "block";
+ const v= ValidateEmail();
+ const p=validateForm();
+ const d=validareData();
+ const o=validareOra();
+  if(v&&p&&d&&o){
+    modal.style.display= "none";
+    modalProgramat.style.display = "block";
+  }
+  else{
+    modalProgramat.style.display = "none";
+  }
+  document.getElementById("ora").value='';
+  document.getElementById("myDate").value='';
+  document.getElementById("mailProgramare").value='';
+  document.getElementById("telefon").value='';
 }
 
 // When the user clicks on <span> (x), close the modal
   spanProgramat.onclick = function() {
-  modalProgramat.style.display = "none";
+  modal.style.display = "none";
+  document.getElementById("ora").value='';
+  document.getElementById("myDate").value='';
+  document.getElementById("mailProgramare").value='';
+  document.getElementById("telefon").value='';
 }
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
+    document.getElementById("ora").value='';
+  document.getElementById("myDate").value='';
+  document.getElementById("mailProgramare").value='';
+  document.getElementById("telefon").value='';
+  document.getElementById("mailContact").value='';
+  document.getElementById("mesajTrimis").value='';
   }
   const modalProgramat = document.getElementById("modalProgramat");
   if(event.target == modalProgramat) {
@@ -58,6 +81,7 @@ window.onclick = function(event) {
   if (event.target == modalContactVar) {
     modalContactVar.style.display = "none";
   }
+
 }
 // Get the modal
 var modalContact = document.getElementById("modalContact1");
@@ -76,6 +100,8 @@ btnContact.onclick = function() {
 // When the user clicks on <span> (x), close the modal
 spanContact.onclick = function() {
   modalContact.style.display = "none";
+  document.getElementById("mailContact").value='';
+  document.getElementById("mesajTrimis").value='';
 }
 
 // When the user clicks anywhere outside of the modal, close it
@@ -95,60 +121,45 @@ var spanContact2 = document.getElementsByClassName("closeContact2")[0];
 
 // When the user clicks on the button, open the modal
 btnContact2.onclick = function() {
-  modalContact.style.display= "none";
-  modalContactVar.style.display = "block";
+  // modalContact.style.display= "none";
+  // modalContactVar.style.display = "block";
+  const p=ValidateEmailContact();
+  const m=validareMesaj();
+  if(p&&m){
+    modalContact.style.display= "none";
+    modalContactVar.style.display = "block";
+  }
+  else{
+    modalContactVar.style.display = "none";
+  }
+  document.getElementById("mailContact").value='';
+  document.getElementById("mesajTrimis").value='';
 }
 
 // When the user clicks on <span> (x), close the modal
 spanContact2.onclick = function() {
   modalContactVar.style.display = "none";
+  document.getElementById("mailContact").value='';
+  document.getElementById("mesajTrimis").value='';
 }
 
 
-const email = document.getElementById("mail");
 
-email.addEventListener("input", (event) => {
-  // Validate with the built-in constraints
-  email.setCustomValidity("");
-  if (!email.validity.valid) {
-    return;
-  }
-
-  // Extend with a custom constraints
-  if (!email.value.endsWith("@example.com")) {
-    email.setCustomValidity("Please enter an email address of @example.com");
-  }
-});
-
-document.getElementById("myDate").onchange = function(){
-   const date = new Date(this.value);
+function validareData(){
+  const date=new Date(document.getElementById("myDate").value);
+  //  const date = new Date(this.value);
    const year =  date.getFullYear();
-   console.log(year);
+   if(year==2025){
+    return true;}
+  else{
+    alert("Invalid date!");
+    return false;
+  }
    
 }
 
-// const validateEmail = (email) => {
-//   return email.match(
-//     /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-//   );
-// };
+//  document.getElementById("myDate").onchange = validareData();
 
-// const validate = () => {
-//   const $result = $('#result');
-//   const email = $('#email').val();
-//   $result.text('');
-
-//   if(validateEmail(email)){
-//     $result.text(email + ' is valid.');
-//     $result.css('color', 'green');
-//   } else{
-//     $result.text(email + ' is invalid.');
-//     $result.css('color', 'red');
-//   }
-//   return false;
-// }
-
-// $('#email').on('input', validate);
 function ValidateEmail()
 {
   console.log("aici");
@@ -166,3 +177,56 @@ input.focus();
 return false;
 }
 }
+ function validateForm() {
+        return checkPhone();
+    }
+    function checkPhone() {
+        var phone = document.getElementById("telefon");
+        var phoneNum = /^(\+4|)?(07[0-8]{1}[0-9]{1}|02[0-9]{2}|03[0-9]{2}){1}?(\s|\.|\-)?([0-9]{3}(\s|\.|\-|)){2}$/;
+            if(phone.value.match(phoneNum)) {
+                return true;
+            }
+            else {
+              alert("Incorrect phone number!")
+                return false;
+            }
+        }
+function validareOra(){
+  var hour=document.getElementById("ora").value;
+  if(hour==""){
+    alert("No hour specified!")
+    return false;
+  }
+  else {
+     return true;
+  }
+ 
+}
+function ValidateEmailContact()
+{
+  
+const input=document.getElementById("mailContact");
+var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+if(input.value.match(mailformat))
+{
+return true;
+}
+else
+{
+alert("You have entered an invalid email address!");
+input.focus();
+return false;
+}
+}
+function validareMesaj(){
+  var mesaj=document.getElementById("mesajTrimis").value;
+  if(mesaj==""){
+    alert("No message specified!")
+    return false;
+  }
+  else {
+     return true;
+  }
+ 
+}
+
