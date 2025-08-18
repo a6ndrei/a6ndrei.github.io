@@ -33,6 +33,7 @@ var button = document.getElementById("programat");
 var spanProgramat = document.getElementsByClassName("inchide")[0];
 // When the user clicks on the button, open the modal
 button.onclick = function() {
+  ValidateEmail();
   modal.style.display= "none";
   modalProgramat.style.display = "block";
 }
@@ -103,11 +104,65 @@ spanContact2.onclick = function() {
   modalContactVar.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
-/*window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+
+const email = document.getElementById("mail");
+
+email.addEventListener("input", (event) => {
+  // Validate with the built-in constraints
+  email.setCustomValidity("");
+  if (!email.validity.valid) {
+    return;
   }
-}*/
 
+  // Extend with a custom constraints
+  if (!email.value.endsWith("@example.com")) {
+    email.setCustomValidity("Please enter an email address of @example.com");
+  }
+});
 
+document.getElementById("myDate").onchange = function(){
+   const date = new Date(this.value);
+   const year =  date.getFullYear();
+   console.log(year);
+   
+}
+
+// const validateEmail = (email) => {
+//   return email.match(
+//     /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+//   );
+// };
+
+// const validate = () => {
+//   const $result = $('#result');
+//   const email = $('#email').val();
+//   $result.text('');
+
+//   if(validateEmail(email)){
+//     $result.text(email + ' is valid.');
+//     $result.css('color', 'green');
+//   } else{
+//     $result.text(email + ' is invalid.');
+//     $result.css('color', 'red');
+//   }
+//   return false;
+// }
+
+// $('#email').on('input', validate);
+function ValidateEmail()
+{
+  console.log("aici");
+  
+const input=document.getElementById("mailProgramare");
+var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+if(input.value.match(mailformat))
+{
+return true;
+}
+else
+{
+alert("You have entered an invalid email address!");
+input.focus();
+return false;
+}
+}

@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="website.css">
+  <title>InfoX</title>
 </head>
 
 <body>
@@ -319,7 +320,7 @@
       </div>
       <div class="text-card8">
         "Nu luam notă de trecere la informatică până am inceput sa lucrez cu Andrei. Acum iau doar nota 10 și am
-        descoperit că am o mare pasiune pentru informatică.""
+        descoperit că am o mare pasiune pentru informatică."
       </div>
     </div>
     <div class="card8">
@@ -421,12 +422,12 @@
     <div class="modal-content">
       <span class="close">&times;</span>
       <h1 class="email">Email</h1>
-      <input type="text" placeholder="Email"><br>
+      <input type="text" class="mail" id="mailProgramare" placeholder="Email"><br>
       <h2 class="numar-de-telefon">Număr de telefon</h2>
       <input type="text" placeholder="Numar de telefon"><br>
       <h3 class="data">Selectează data</h3>
       <div class="validator">
-        <input type="date" min="2025-01-05" max="2026-01-01" required/>
+        <input type="date" class="input-data" id="myDate" min="2025-01-05" max="2026-01-01" required/>
       <span class="validare"></span>
       </div>
       <!-- <input type="date" min="2025-01-05" max="2026-01-01" required/>
@@ -453,7 +454,7 @@
     <div class="modal-content-contact">
       <span class="closeContact">&times;</span>
       <h1 class="email">Email</h1>
-      <input type="text" placeholder="Email"><br>
+      <input type="text" id="mail" placeholder="Email"><br>
       <h3 class="mesaj-contact">
         Scrie mesaj
       </h3>
