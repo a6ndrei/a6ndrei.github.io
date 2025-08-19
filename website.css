@@ -423,7 +423,7 @@ body{
 }
 .alege-planul{
   font-family: Geist;
-  margin-top:40px;
+  margin:40px;
   text-align: center;
   background: #2a979b;
   background: linear-gradient(90deg, rgba(42, 151, 155, 1) 9%, rgba(61, 155, 116, 1) 20%, rgba(87, 167, 199, 1) 61%, rgba(132, 83, 237, 1) 86%);
@@ -436,10 +436,14 @@ body{
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
+    background: url("/imgInfox/poza-fundal.png") top center;
+    background-size: cover;
+    background-position: center;
 }
+
 .card5{
   /* margin-left: 100px; */
-  margin-top: 40px;
+  margin-top: 50px;
   height: 550px;
   width: 300px;
   border-radius: 30px;
@@ -447,6 +451,7 @@ body{
   transition: 0.3s;
   background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%); 
   backdrop-filter: blur(10px);
+  margin-bottom: 40px;
 }
 .sesiune-unica{
   padding-top: 25px;
@@ -527,7 +532,8 @@ body{
 }
 .card6{
   /* margin-left: 150px; */
-  margin-top: 40px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   height: 550px;
   width: 300px;
   border-radius: 30px;
@@ -608,7 +614,8 @@ body{
 }
 .card7{
   /* margin-left: 150px; */
-  margin-top: 40px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   height: 550px;
   width: 300px;
   border-radius: 30px;
@@ -1136,3 +1143,5 @@ textarea{
   margin-top: 200px;
   margin-left: 140px;
 }
+
+
