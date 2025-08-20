@@ -83,6 +83,7 @@
 .butoane-invatare-pret{
   margin-top: 35px;
   text-align: center;
+  /* flex-wrap: wrap; */
 }
 .buton-invatare{
   margin-right: 15px;
@@ -95,6 +96,7 @@
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
   cursor: pointer;
   position: relative;
+  /* flex-wrap: wrap; */
 }
 
 .buton-invatare:hover::after, .buton-invatare:hover::before{
@@ -199,7 +201,7 @@
   background-color: white;
   /* margin-left: 210px; */
   margin-top: 40px;
-  height: 250px;
+  /* height: 250px; */
   width: 480px;
   border-radius: 30px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -230,6 +232,12 @@
 .flex-dreptunghiuri-1{  
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+}
+.flex-dreptunghiuri-2{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .flex-carduri-1{
   display: flex;
@@ -272,7 +280,7 @@
 .card2{
   background-color: white;
   margin-top: 40px;
-  height: 250px;
+  /* height: 250px; */
   width: 480px;
   border-radius: 30px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -320,7 +328,7 @@
   background-color: white;
   /* margin-left: 210px; */
   margin-top: 40px;
-  height: 250px;
+  /* height: 250px; */
   width: 480px;
   border-radius: 30px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -343,6 +351,7 @@
 .flex-dreptunghiuri-3{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 .card-git{
   padding: 5px;
@@ -372,7 +381,7 @@
   background-color: white;
   /* margin-left: 100px; */
   margin-top: 40px;
-  height: 250px;
+  /* height: 250px; */
   width: 480px;
   border-radius: 30px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -401,6 +410,7 @@
 .flex-dreptunghiuri-4{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 .card-interviuri-cod{
   padding: 5px;
@@ -657,11 +667,24 @@
 }
 .Andrei{
   margin-left: 59px;
-  font-size: 21px;
+  /* font-size: 21px; */
   color: #3a3a44;
-  width: 800px;
+  /* width: 800px;  */
   word-break: break-word;
 }
+@media screen and (min-width: 601px) {
+  .Andrei,.indiferent {
+    font-size: 21px;
+     width: 800px; 
+  }
+}
+@media screen and (max-width: 600px) {
+  .Andrei,.indiferent {
+    font-size: 20px;
+     width: 200px; 
+  }
+}
+
 .master{
   margin-left: 9px;
   font-size: 21px;
@@ -669,9 +692,9 @@
 }
 .indiferent{
   margin-left: 59px;
-  font-size: 21px;
+  /* font-size: 21px; */
   color: #3a3a44;
-  width: 800px;
+  /* width: 800px; */
   word-break: break-word;
   margin-top: 25px;
 }
@@ -750,7 +773,7 @@
 }
 .final{
   margin-top: 70px;
-  height:600px;
+  /* height:600px; */
   background-color: #f0f0f1;
   opacity: 1;
   width: 100%;
@@ -1147,6 +1170,44 @@ textarea{
   object-fit: cover;
   margin-top: 200px;
   margin-left: 140px;
+  /* float: right; */
 }
+@media screen and (max-width: 600px) {
+ .imagine-eu {
+    /* height: 200px; */
+     width: 230px;
+     height: 230px;
+     margin-left: 10px; 
+  }
+}
+@media screen and (max-width: 600px) {
+ .card1,.card2,.card3,.card4,.card5,.card6,.card7 {
+  /* height: auto; */
+  width: 90%;
+  }}
+  @media screen and (max-width: 600px) {
+ .card9 {
+  padding-bottom: 30px;
+   width: 90%;
+  }}
 
+/* .card1,.card2,.card3,.card4{
+  box-sizing: border-box;
+  width: 35%;
+} */
+ @media screen and (max-width: 600px) {
+.obtine-cariera,.ce-invat,.optiuni-pret,.ce-spun-studentii,.gata-sa-inveti,.obtine-ajutor,.meditatii,.alege-planul,.credeti-pe-cuvant,.limbaje{
+   font-size: 20px;
+     word-break: break-word;
+  }}
+
+ @media screen and (max-width: 600px) {
+.buton-card9{
+  /* width: 90%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
+    display:block;
+  margin:0.4em auto;
+  }}
 
